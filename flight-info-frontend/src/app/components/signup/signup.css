@@ -1,0 +1,57 @@
+.flight-form-container {
+  max-width: 350px;
+  margin: 0;
+  padding: 2rem 2.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 1.1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.6rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+.error-text {
+  color: #d32f2f;
+  margin-top: 0.5rem;
+}
+.success-text {
+  color: #388e3c;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,24 @@
+/* Center all main app content vertically and horizontally */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f6f8fa;
+}
+
+app-root, app-login, app-signup, app-flight-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+/* You can add global styles to this file, and also import other style files */

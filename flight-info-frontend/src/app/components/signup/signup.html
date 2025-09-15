@@ -1,0 +1,41 @@
+<div class="flight-form-container">
+  <h2>Sign Up</h2>
+  <form (ngSubmit)="signupEmail()">
+    <div class="form-field">
+      <label for="signup-email">Email</label>
+      <input
+        id="signup-email"
+        name="email"
+        [(ngModel)]="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="form-field">
+      <label for="signup-password">Password</label>
+      <input
+        id="signup-password"
+        name="password"
+        [(ngModel)]="password"
+        type="password"
+        placeholder="Enter your password"
+        required
+      />
+    </div>
+    <div class="form-field">
+      <label for="signup-confirm-password">Confirm Password</label>
+      <input
+        id="signup-confirm-password"
+        name="confirmPassword"
+        [(ngModel)]="confirmPassword"
+        type="password"
+        placeholder="Confirm your password"
+        required
+      />
+    </div>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p *ngIf="error" class="error-text" style="color:red; font-size: 0.9rem;">{{ error }}</p>
+  <p *ngIf="success" class="success-text" style="color:green; font-size: 0.9rem;">{{ success }}</p>
+</div>
